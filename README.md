@@ -33,7 +33,7 @@ Enter your nickname when prompted and start chatting with other connected users.
 
 4- Handles client disconnections automatically.
 
-##📌 Requirements
+## 📌 Requirements
 Python 3.x
 
 No external dependencies (only built-in libraries: socket, threading)

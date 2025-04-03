@@ -16,7 +16,7 @@ A simple multi-user chat application using **Python sockets** and **threading**.
 python Server.py
 ```
 
-# 2. Start the Client
+### 2. Start the Client
 In a new terminal window (you can open multiple for different users), run:
 
 ```bash
@@ -33,7 +33,7 @@ Enter your nickname when prompted and start chatting with other connected users.
 
 4- Handles client disconnections automatically.
 
-📌 Requirements
+##📌 Requirements
 Python 3.x
 
 No external dependencies (only built-in libraries: socket, threading)

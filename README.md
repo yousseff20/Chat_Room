@@ -6,7 +6,7 @@ A simple multi-user chat application using **Python sockets** and **threading**.
 
 - `Server.py`: Handles multiple clients, broadcasting messages, and managing connections.
 - `clinet.py`: Connects to the server, sends and receives messages.
-  > 🔧 _Note: It's recommended to rename this file to `client.py` for better clarity._
+
 
 ## 🚀 How to Run
 

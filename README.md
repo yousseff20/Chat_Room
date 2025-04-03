@@ -26,8 +26,11 @@ Enter your nickname when prompted and start chatting with other connected users.
 
 # 🛠 Features
 1- Multi-user support via threading.
+
 2- Simple nickname identification system.
+
 3- Real-time message broadcasting to all clients.
+
 4- Handles client disconnections automatically.
 
 📌 Requirements

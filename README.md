@@ -1,66 +1,39 @@
-Chat Application (Server & Client)
-هذا المشروع عبارة عن تطبيق دردشة بسيط يعمل باستخدام socket و threading بلغة Python. يسمح للمستخدمين بالاتصال بسيرفر مركزي والتواصل في غرفة دردشة.
+# 🧑‍💻 Python Chat Application
 
-📁 الملفات في المشروع:
-Server.py:
+A simple multi-user chat application using **Python sockets** and **threading**. This project includes both the server and client scripts.
 
-يشغل سيرفر الدردشة ويستقبل الاتصالات من العملاء.
+## 📂 Project Structure
 
-يخزن قائمة بالمستخدمين المتصلين ويرسل الرسائل إلى جميع العملاء المتصلين.
+- `Server.py`: Handles multiple clients, broadcasting messages, and managing connections.
+- `clinet.py`: Connects to the server, sends and receives messages.
+  > 🔧 _Note: It's recommended to rename this file to `client.py` for better clarity._
 
-يتعامل مع قطع الاتصال ويقوم بإزالة المستخدمين من القائمة.
+## 🚀 How to Run
 
-clinet.py (يبدو أن هناك خطأ في اسم الملف، يفضل تغييره إلى client.py):
+### 1. Start the Server
 
-يتصل بالسيرفر عبر عنوان IP والمنفذ المحدد.
-
-يرسل اسم المستخدم (nickname) عند الاتصال بالسيرفر.
-
-يستقبل الرسائل من السيرفر ويطبعها، كما يسمح للمستخدم بإرسال الرسائل.
-
-🚀 كيفية التشغيل
-تشغيل السيرفر:
-افتح Terminal أو Command Prompt.
-
-انتقل إلى المجلد الذي يحتوي على Server.py.
-
-نفّذ الأمر التالي:
-
-bash
-Copy
-Edit
+```bash
 python Server.py
-تشغيل العميل:
-افتح Terminal أو Command Prompt جديد.
+```
 
-انتقل إلى المجلد الذي يحتوي على clinet.py.
+# 2. Start the Client
+In a new terminal window (you can open multiple for different users), run:
 
-نفّذ الأمر التالي:
-
-bash
-Copy
-Edit
+```bash
 python clinet.py
-سيطلب منك إدخال اسم المستخدم (nickname)، أدخله ثم اضغط Enter.
+```
+Enter your nickname when prompted and start chatting with other connected users.
 
-يمكنك الآن إرسال واستقبال الرسائل في الدردشة.
+# 🛠 Features
+1- Multi-user support via threading.
+2- Simple nickname identification system.
+3- Real-time message broadcasting to all clients.
+4- Handles client disconnections automatically.
 
-✨ تحسينات مقترحة
-إصلاح اسم ملف العميل: تغيير clinet.py إلى client.py.
-
-إضافة واجهة رسومية (GUI): يمكن استخدام Tkinter أو PyQt لواجهة مستخدم أفضل.
-
-دعم التشفير: لضمان خصوصية الرسائل باستخدام SSL أو cryptography.
-
-👨‍💻 المتطلبات
+📌 Requirements
 Python 3.x
 
-لا تحتاج إلى مكتبات خارجية، حيث يعتمد المشروع على مكتبات Python المدمجة.
+No external dependencies (only built-in libraries: socket, threading)
 
-📌 ملاحظات
-تأكد من أن السيرفر يعمل قبل تشغيل العملاء.
 
-يجب أن يكون المنفذ 12345 غير محجوب إذا كنت ستشغل السيرفر على شبكة أخرى.
-
-يمكن تعديل server_host في clinet.py ليتطابق مع عنوان السيرفر الفعلي.
 
